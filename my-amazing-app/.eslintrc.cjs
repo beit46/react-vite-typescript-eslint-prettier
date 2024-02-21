@@ -2,15 +2,16 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   settings: {
-    "react": {
-      "version": "detect"
-    }
+    react: {
+      version: 'detect',
+    },
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    "plugin:react/recommended",
+    'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -20,7 +21,5 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    "quotes": ["error", "single"],
-    "semi": [2, "always"],
   },
-}
+};
